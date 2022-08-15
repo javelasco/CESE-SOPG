@@ -2,3 +2,5 @@ DATA: Esto es una prueba!
 DATA: Mi nombre es: Jhonny Velasco
 DATA: Esto es TP1 del curso de Sistemas Operativos de Proposito General
 DATA: hi
+DATA: Hola mundo!
+DATA: hola

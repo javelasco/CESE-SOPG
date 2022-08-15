@@ -70,14 +70,19 @@ int main(void) {
             perror("Error fgets.");
         } else {
             uint8_t *p = malloc( (strlen(outputBuffer) + 1) );
+            if(p == NULL) {
+                perror("Dont memory available.");
+                exit(1);
+            }
+            
             strcat(strcpy(p, data), outputBuffer);
 
             if( (bytesWrote = write(fd, p, strlen(p))) == -1 ) {
                 perror("Error Write.");
             } else {
                 printf("Write: wrote %d bytes\n", bytesWrote);
-                free(p);
             }
+            free(p);
         }
     }
 
