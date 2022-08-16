@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "serialmanager.h": "c"
+        "serialmanager.h": "c",
+        "pthread.h": "c"
     }
 }
